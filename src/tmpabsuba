@@ -1,0 +1,7 @@
+fn main () {
+	#[derive(Debug)]
+	enum temp {
+		F(f32),
+		c,
+	}
+}

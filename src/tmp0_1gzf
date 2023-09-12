@@ -1,0 +1,7 @@
+fn main () {
+	#[derive(Debug)]
+	enum temp {
+		Variant1,
+		Variant2,
+	}
+}
