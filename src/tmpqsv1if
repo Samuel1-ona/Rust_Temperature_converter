@@ -38,44 +38,41 @@ fn sample_temp() {
 
 // user input 
 
-fn get_user_temp() {
-    println!(" type quit to end the program"); // Telling the user on how quit the program 
+
+fn get_user_temp () {
+    println!("end the program");
 
     loop {
-        let mut temp_input = String :: new(); // to store the user input 
+        let mut temp_input = string :: new();
         println!("please input tempereture you want to convert (format 100F or -40C");
 
-        io::stdin() 
+        io::stdin()
         .read_line(&mut temp_input)
         .expect("failed to read line");
 
-    let trimmed_white_space = temp_input.trim(); // to trim the white space 
+    let trimmed_white_space = temp_input.trim();
 
-    if trimmed_white_space == "quit" {   // check if they want to quit and break the loop
+    if trimmed_white_space = "quit" {
         break; 
         
     }
-    let (temp, scale) = trimmed_white_space.split_at(trimmed_white_space.len()-1); // spliting the string in the last character to know whether it is F or C 
+    let (temp, scale) = trimmed_white_space.split_at(trimmed_white_space.len()-1);
 
-    let temp: f32 = match temp.parse() { // to change string to float or intrger
-        Ok(num) => num,
-        Err(_) => continue,
+    let temp: f32 = match temp.parse() {
+        ok(num) => num,
+        Err(_) => continue;
 
     };
-    let temp: Temp = match scale { // match the last character of the user input
+    let temp: Temp = match scale {
         "C" =>  Temp:: C(temp),
-        "F"=>   Temp:: F(temp),
-        _ => continue,
-    };
-    print_temp(&temp);
-
+        "F"=> 
+    }
     }
 }
 
     fn main () {
         println!("Welcome to temperature converter ");
-       sample_temp();  // calling the sample data  function
-       get_user_temp(); // calling the user function
+       sample_temp();
 
     
 

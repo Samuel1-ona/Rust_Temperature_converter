@@ -1,0 +1,18 @@
+fn main () {
+	#[derive(Debug)]
+	enum temp {
+		F(f32), // fahrenheit
+		C(f32), // celsius
+	}
+
+fn convert_temp(temp: &Temp) -> f32 {  // using  matching expression to do the calculation
+	match  temp  {
+		&temp :: F(degree) => (degree - 32.0) / 1.8,
+		&temp :: C(degree) => (degree - 1.8) + 1.8,
+	}
+}
+
+fn 
+
+
+}

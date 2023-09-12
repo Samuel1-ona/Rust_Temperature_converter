@@ -74,8 +74,8 @@ fn get_user_temp() {
 
     fn main () {
         println!("Welcome to temperature converter ");
-       sample_temp();  // calling the sample data  function
-       get_user_temp(); // calling the user function
+       sample_temp(); 
+       get_user_temp();
 
     
 

@@ -21,7 +21,7 @@ fn print_temp(temp: &Temp) -> f32  {
 		&Temp :: C(degrees) => println!("{}C = {}F",degrees, convert_temp(temp)),
 	}
 }
-     // this function is for sample data
+
 fn sample_temp() {
 	println!("sample conversion");
 
@@ -34,13 +34,9 @@ fn sample_temp() {
 		print_temp(temp);
 	}
 
-}
-
 	fn main () {
-		println!("Welcome to temperature converter ");
-       sample_temp();
-
-	
+		println!("Welcome to temperature converter {}", );
+	}
 
 }
 

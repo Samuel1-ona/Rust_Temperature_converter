@@ -38,8 +38,9 @@ fn sample_temp() {
 
 // user input 
 
-fn get_user_temp() {
-    println!(" type quit to end the program"); // Telling the user on how quit the program 
+
+fn get_user_temp () {
+    println!("end the program"); // Telling the user on how quit the program 
 
     loop {
         let mut temp_input = String :: new(); // to store the user input 
@@ -62,7 +63,7 @@ fn get_user_temp() {
         Err(_) => continue,
 
     };
-    let temp: Temp = match scale { // match the last character of the user input
+    let temp: Temp = match scale { 
         "C" =>  Temp:: C(temp),
         "F"=>   Temp:: F(temp),
         _ => continue,
@@ -74,8 +75,7 @@ fn get_user_temp() {
 
     fn main () {
         println!("Welcome to temperature converter ");
-       sample_temp();  // calling the sample data  function
-       get_user_temp(); // calling the user function
+       sample_temp();
 
     
 

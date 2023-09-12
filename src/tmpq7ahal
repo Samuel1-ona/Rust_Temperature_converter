@@ -1,0 +1,16 @@
+fn main () {
+	#[derive(Debug)]
+	enum temp {
+		F(f32), // fahrenheit
+		C(f32), // celsius
+	}
+
+fn convert_temp(temp: &Temp) -> f32 {
+	match  temp  {
+		&temp :: => expr,
+		None => expr,
+	}
+}
+
+
+}

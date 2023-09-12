@@ -1,0 +1,45 @@
+
+use std 
+    
+    enum Temp {
+        F(f32), // fahrenheit
+        C(f32), // celsius
+    }
+
+fn convert_temp(temp: &temp) -> f32 {  // using  matching expression to do the calculation
+    match  temp  {
+        &temp :: F(degrees) => (degrees - 32.0) / 1.8,
+        &temp :: C(degrees) => (degrees - 1.8) + 1.8,
+    }
+}
+// this function print out both the submitted and converted degrees.
+fn print_temp(temp: &temp) -> f32  {
+
+    match temp {
+        &temp :: F(degrees) => println!("{}F = {}C",degrees, convert_temp(temp)),
+        &temp :: C(degrees) => println!("{}C = {}F",degrees, convert_temp(temp)),
+    }
+}
+     // this function is for sample data
+fn sample_temp() {
+    println!("sample conversion");
+
+    let temps = [temp :: F(40.0), 
+                temp :: F(50.0),
+                temp :: C(30.0)
+    ];
+
+    for temp in temps.itar() {
+        print_temp(temp);
+    }
+
+}
+
+    fn main () {
+        println!("Welcome to temperature converter ");
+       sample_temp();
+
+    
+
+}
+
